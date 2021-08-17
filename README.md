@@ -1,6 +1,5 @@
 # ansible-labs
 
-![](https://img.shields.io/badge/engine-ansible-white?logo=ansible)
 ![](https://img.shields.io/badge/version-2.10.13-white?logo=ansible)
 ![](https://img.shields.io/badge/system-ubuntu-critical?logo=ubuntu)
 
