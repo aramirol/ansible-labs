@@ -1,0 +1,9 @@
+[grupo-1]
+ansible-server.casare.int ansible_user=ansible_user
+
+[grupo-2]
+ansible-client.casare.int ansible_user=ansible_user
+
+[grupo-todos]
+ansible-server.casare.int ansible_user=ansible_user
+ansible-client.casare.int ansible_user=ansible_user
