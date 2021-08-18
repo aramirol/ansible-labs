@@ -3,7 +3,7 @@
 ![](https://img.shields.io/badge/version-2.10.13-white?logo=ansible)
 ![](https://img.shields.io/badge/system-ubuntu-critical?logo=ubuntu)
 
-![](images/ansible-header-1024x640.png)
+<img src="images/ansible-header-1024x640.png" width="20%" />
 
 Fast training course on Ansible from beginners to experts. The purpose of this course is to learn how to use Ansible and the magic of orchestration.
 
