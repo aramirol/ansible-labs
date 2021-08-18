@@ -10,6 +10,7 @@ Fast training course on Ansible from beginners to experts. The purpose of this c
 ## Notes
 
 Modify sudoers to grant no password root privileges to ***ansible_user*** user:
+
 ```
 # Same things without a password
 ansible_user    ALL=(ALL)       NOPASSWD: ALL
