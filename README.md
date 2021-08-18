@@ -3,21 +3,19 @@
 ![](https://img.shields.io/badge/version-2.10.13-white?logo=ansible)
 ![](https://img.shields.io/badge/system-ubuntu-critical?logo=ubuntu)
 
+![](images/ansible-header-1024x640.png)
 
-Labs based on course [https://www.udemy.com/course/ansible-desde-cero-a-experto-en-espanol/](https://www.udemy.com/course/ansible-desde-cero-a-experto-en-espanol/).
+Fast training course on Ansible from beginners to experts. The purpose of this course is to learn how to use Ansible and the magic of orchestration.
 
-Notes:
+## Notes
 
-Modify sudoers to grant no password root privilegs to ***ansible_user*** user:
+Modify sudoers to grant no password root privileges to ***ansible_user*** user:
 ```
 # Same things without a password
 ansible_user    ALL=(ALL)       NOPASSWD: ALL
 ```
 
-Content:
+## Content
 
-1. Ad-hoc commands
-2. 
-3. 
-4. 
-5. 
+1. [Ad-hoc commands](1-ad-hoc)
+
