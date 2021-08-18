@@ -17,5 +17,5 @@ ansible_user    ALL=(ALL)       NOPASSWD: ALL
 
 ## Content
 
-1. [Ad-hoc commands](1-ad-hoc)
+1. [Ad-hoc commands](1.ad-hoc)
 
