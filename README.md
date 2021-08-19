@@ -11,6 +11,6 @@ Fast training course on Ansible from beginners to experts. The purpose of this c
 
 ## Content
 
-0. [Environment](0.environment)
+0. [Create environment](0.environment)
 1. [Ad-hoc commands](1.ad-hoc)
 
