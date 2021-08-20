@@ -14,4 +14,5 @@ Fast training course on Ansible from beginners to experts. The purpose of this c
 0. [Create environment](0.environment)
 1. [Ad-hoc commands](1.ad-hoc)
 2. [Playbooks examples](2.playbooks)
+3. [Vars examples](3.vars)
 
