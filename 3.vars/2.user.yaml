@@ -1,0 +1,17 @@
+---
+- hosts: group2
+  vars_files:
+    - vars.yaml
+  become: true
+  user: ansible_user
+  
+  tasks:
+    - name: Create group {{ group }}
+      group:
+        name: '{{ group }}'
+
+    - name: Create user {{ user }}
+      user:
+        name: "{{ user }}"
+        group: "{{ group }}"
+...    

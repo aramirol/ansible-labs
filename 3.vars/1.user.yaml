@@ -1,0 +1,18 @@
+---
+- hosts: group2
+  vars:
+    user: ansibleuser1
+    group: curso
+  become: true
+  user: ansible_user
+  
+  tasks:
+    - name: Create group {{ group }}
+      group:
+        name: '{{ group }}'
+
+    - name: Create user {{ user }}
+      user:
+        name: "{{ user }}"
+        group: "{{ group }}"
+...    
