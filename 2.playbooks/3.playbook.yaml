@@ -1,0 +1,24 @@
+---
+- name: Identifying play applied in all groups
+  hosts: groupall
+  become: true
+  user: ansible_user
+
+  tasks:
+    - name: Create testuser
+      user:
+        name: testuser
+        shell: /bin/bash
+        comment: test user from ansible playbook
+
+    - name: Install tree package
+      apt:
+        name: tree
+        state: latest
+
+    - name: Copy hosts file to /tmp
+      copy:
+        src: myhosts
+        dest: /tmp
+        mode: '0644'
+...

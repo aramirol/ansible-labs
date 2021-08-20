@@ -1,0 +1,17 @@
+---
+- name: My task to groupall
+  hosts: groupall
+  become: true
+  
+  tasks:
+    - block:
+      - name: Install vsftpd
+        apt:
+          name: vsftpd
+          state: latest
+      - name: power on service vsftpd
+        systemd:
+          name: vsftpd
+          state: started
+          enabled: true
+...

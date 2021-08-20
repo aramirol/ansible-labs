@@ -1,0 +1,25 @@
+---
+- hosts: group2
+  become: true
+  user: ansible_user
+  tasks:
+    - name: Copy myfile.txt to /tmp path
+      copy:
+        src: myfile.txt
+        dest: /tmp
+        owner: ansible_user
+        group: ansible_user
+        mode: '0644'
+
+- hosts: group2
+  become: true
+  user: ansible_user
+  tasks:
+    - name: Adding content to myfile.txt
+      copy:
+        content: "My test file"
+        dest: /tmp/myfile.txt
+        owner: ansible_user
+        group: ansible_user
+        mode: '0644'
+...
