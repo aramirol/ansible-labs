@@ -1,14 +1,16 @@
 ---
 - hosts: group2
   vars:
-    user1: atest
-    directory: /home/atest
-    comment: array with variables
+    user1:
+      user_name: atest
+      user_home: /home/atest
+      user_description: array with variables
   become: true
+  user: ansible_user
   tasks:
-    - name: Create user {{ user1.name }}
+    - name: Create user {{ user1.user_name }}
       user:
-        name: "{{ user1.name }}"
-        home: "{{ user1['directory'] }}"
-        comment: "{{ user1.comment }}"
+        name: "{{ user1.user_name }}"
+        home: "{{ user1['user_home'] }}"
+        comment: "{{ user1.user_description }}"
 ...

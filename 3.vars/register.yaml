@@ -1,0 +1,12 @@
+---
+- hosts: group2
+  become: true
+  tasks:
+    - name: Install Apache
+      apt:
+        name: tree
+        state: latest
+      register: install
+
+    - debug: var=install
+...
