@@ -1,0 +1,10 @@
+---
+- hosts: group2
+  become: true
+  user: ansible_user
+  tasks:
+    - include_vars: vars.yaml
+    - include_tasks: tasks.yaml
+      vars:
+        mypackage: vim
+...

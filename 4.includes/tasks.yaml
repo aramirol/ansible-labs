@@ -1,0 +1,16 @@
+---
+- name: Install php
+  apt:
+    name: php
+    state: latest
+
+- name: Install vim
+  apt:
+    name: "{{ mypackage }}"
+    state: latest
+
+- name: Install {{ newpackage }}
+  apt:
+    name: "{{ newpackage }}"
+    state: latest
+...
