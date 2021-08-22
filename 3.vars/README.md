@@ -29,3 +29,12 @@ ansible-playbook -i inventory array.yaml
 ansible-playbook -i inventory register.yaml
 ```
 
+## Using facts
+```
+ansible group2 -i inventory -m setup
+```
+```
+ansible-playbook -i inventory facts.yaml
+```
+
+

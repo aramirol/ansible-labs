@@ -1,0 +1,10 @@
+---
+- hosts: group2
+  become: true
+  user: ansible_user
+  tasks:
+    - name: View hostname
+      debug:
+        msg: >
+          The hostname of my machine is {{ ansible_hostname }} and my IP is {{ ansible_default_ipv4.address }}
+...
