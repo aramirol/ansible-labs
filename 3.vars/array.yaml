@@ -1,0 +1,14 @@
+---
+- hosts: group2
+  vars:
+    user1: atest
+    directory: /home/atest
+    comment: array with variables
+  become: true
+  tasks:
+    - name: Create user {{ user1.name }}
+      user:
+        name: "{{ user1.name }}"
+        home: "{{ user1['directory'] }}"
+        comment: "{{ user1.comment }}"
+...
