@@ -1,0 +1,14 @@
+---
+- hosts: groupall
+  tasks:
+    - block:
+      - name: Show wellcome message
+        debug:
+          sas: Wellcome!!!
+
+      rescue:
+        - name: Rescue wellcome message
+          debug:
+            msg: |
+              Testing Wellcome!!!
+...
