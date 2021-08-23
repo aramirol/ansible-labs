@@ -1,0 +1,9 @@
+---
+- name: Message in {{ env.certification }}
+  debug:
+    msg: |
+      Testing in {{ env.certification }} environment
+  tags:
+    - qa
+    - vars
+...

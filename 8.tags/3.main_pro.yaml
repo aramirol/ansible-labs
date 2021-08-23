@@ -1,0 +1,8 @@
+---
+- name: Message in {{ env.production }}
+  debug:
+    msg: |
+      Testing in {{ env.production }} environment
+  tags:
+    - pro
+...

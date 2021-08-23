@@ -1,0 +1,32 @@
+---
+- hosts: group2
+  become: true
+  vars:
+    env:
+      development: dev
+      certification: qa
+      production: pro
+  tasks:
+    - name: Test in {{ env.development }}
+      debug:
+        msg: |
+          Testing in {{ env.development }} environment
+      tags:
+        - dev
+        - dev-test
+        - dev-final
+
+    - name: Test in {{ env.certification }}
+      debug:
+        msg: |
+          Testing in {{ env.certification }} environment
+      tags:
+        - qa
+
+    - name: Test in {{ env.production }}
+      debug:
+        msg: |
+          Testing in {{ env.production }} environment
+      tags:
+        - pro
+...

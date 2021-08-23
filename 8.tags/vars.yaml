@@ -1,0 +1,9 @@
+---
+pkg:
+  - apache2
+  - mod_ssl
+env:
+  development: dev
+  certification: qa
+  production: pro
+...

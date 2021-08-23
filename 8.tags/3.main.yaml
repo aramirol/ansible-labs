@@ -1,0 +1,15 @@
+---
+- hosts: groupall
+  tasks:
+    - include_vars: vars.yaml
+      tags: vars
+
+    - include_tasks: 3.main_dev.yaml
+      tags: dev
+
+    - include_tasks: 3.main_qa.yaml
+      tags: qa
+
+    - include_tasks: 3.main_pro.yaml
+      tags: pro
+...
