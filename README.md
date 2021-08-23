@@ -20,4 +20,7 @@ Fast training course on Ansible from beginners to experts. The purpose of this c
 6. [Conditionals examples](6.conditionals)
 7. [Handlers example](7.handlers)
 8. [Tags examples](8.tags)
+9. [Roles examples](9.roles)
+10. [Galaxy examples](10.galaxy)
+
 
