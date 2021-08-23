@@ -1,0 +1,6 @@
+---
+- name: Test with vars dir
+  debug:
+    msg: |
+      {{ messagevars }}
+...
