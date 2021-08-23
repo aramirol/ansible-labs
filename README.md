@@ -17,4 +17,5 @@ Fast training course on Ansible from beginners to experts. The purpose of this c
 3. [Vars examples](3.vars)
 4. [Includes examples](4.includes)
 5. [Loops examples](5.loops)
+6. [Conditionals examples](6.conditionals)
 
