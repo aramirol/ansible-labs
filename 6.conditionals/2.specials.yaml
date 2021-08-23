@@ -1,0 +1,10 @@
+---
+- hosts: groupall
+  become: true
+  user: ansible_user
+  tasks:
+    - name: Playing with special vars
+      debug:
+        msg: >
+          Testing ansible in the version {{ ansible_version }}
+...

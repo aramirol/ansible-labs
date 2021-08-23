@@ -1,0 +1,14 @@
+---
+- hosts: groupall
+  become: true
+  user: ansible_user
+  vars:
+    message: Ansible
+  tasks:
+    - name: Playing with special vars
+      debug:
+        msg: |
+          Hello my class {{ message }}
+
+      when: message is defined
+...
