@@ -1,0 +1,32 @@
+---
+- hosts: group2
+  become: true
+  vars:
+    pkg: apache2
+    path: /var/www/html/index.html
+    file: index.html
+  tasks:
+    - name: Install {{ pkg }}
+      apt:
+        name: "{{ pkg }}"
+        state: latest
+
+    - name: Create {{ file }} in the path {{ path }}
+      copy:
+        content: Testing handlers in the node {{ ansible_hostname }} test restarted
+        dest: "{{ path }}"
+      notify:
+        - Restart {{ pkg }}
+
+    - name: enable {{ pkg }}
+      systemd:
+        name: "{{ pkg }}"
+        state: started
+        enabled: yes
+
+  handlers:
+    - name: Restart {{ pkg }}
+      systemd:
+        name: "{{ pkg }}"
+        state: restarted
+...
