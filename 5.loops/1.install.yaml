@@ -1,0 +1,13 @@
+---
+- hosts: group2
+  become: true
+  user: ansible_user
+  tasks:
+    - name: Install vsftpd and apache2
+      apt:
+        name: "{{ item }}"
+        state: latest
+      loop:
+        - vsftpd
+        - apache2
+...

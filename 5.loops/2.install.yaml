@@ -1,0 +1,12 @@
+---
+- hosts: group2
+  vars_files: vars.yaml
+  become: true
+  user: ansible_user
+  tasks:
+    - name: Install vsftpd and apache2
+      apt:
+        name: "{{ item }}"
+        state: latest
+      loop: "{{ pkg }}"
+...

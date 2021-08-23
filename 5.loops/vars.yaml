@@ -1,0 +1,4 @@
+pkg: [vsftpd, apache2]
+packages:
+  - tree
+  - watch
