@@ -19,4 +19,5 @@ Fast training course on Ansible from beginners to experts. The purpose of this c
 5. [Loops examples](5.loops)
 6. [Conditionals examples](6.conditionals)
 7. [Handlers example](7.handlers)
+8. [Tags examples](8.tags)
 
