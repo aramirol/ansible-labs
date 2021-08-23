@@ -1,0 +1,12 @@
+---
+# tasks file for owncloud
+
+- include_tasks: install.yml
+  tags: 
+    - install
+    - startservice
+
+- include_tasks: download.yml
+  tags:
+    - download
+...

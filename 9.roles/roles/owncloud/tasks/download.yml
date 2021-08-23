@@ -1,0 +1,11 @@
+---
+- name: Download owncloud
+  unarchive:
+    src: "{{ download }}"
+    dest: "{{ path }}"
+    remote_src: yes
+  notify:
+    - restart_apache
+  tags:
+    - download
+...

@@ -1,0 +1,9 @@
+---
+- hosts: group2
+  gather_facts: no
+  become: true
+  user: ansible_user
+  roles: 
+    - owncloud
+
+...

@@ -1,0 +1,6 @@
+---
+# vars file for owncloud
+
+download: https://download.owncloud.org/community/owncloud-complete-20210326.zip
+path: /var/www/html/
+...

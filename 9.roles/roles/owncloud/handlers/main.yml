@@ -1,0 +1,8 @@
+---
+# handlers file for owncloud
+
+- name: restart_apache
+  systemd:
+    name: apache2
+    state: restarted
+...
