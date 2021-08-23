@@ -1,0 +1,22 @@
+---
+- hosts: group2
+  become: true
+  user: ansible_user
+  tasks:
+    - name: Creating groups
+      group:
+        name: "{{ item }}"
+      loop:
+        - loopgroup1
+        - loopgroup2
+        - loopgroup3
+
+    - name: Creating users
+      user:
+        name: "{{ item.name }}"
+        group: "{{ item.group }}"
+      loop:
+        - { name: 'loopuser1', group: 'loopgroup1' }
+        - { name: 'loopuser2', group: 'loopgroup2' }
+        - { name: 'loopuser3', group: 'loopgroup3' }
+...

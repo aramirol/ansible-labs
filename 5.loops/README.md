@@ -23,4 +23,9 @@ ansible-playbook -i inventory 2.install.yaml
 ansible-playbook -i inventory 3.install.yaml
 ```
 
+## Using lists to create users
+```
+ansible-playbook -i inventory list.yam
+```
+
 
