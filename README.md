@@ -15,4 +15,6 @@ Fast training course on Ansible from beginners to experts. The purpose of this c
 1. [Ad-hoc commands](1.ad-hoc)
 2. [Playbooks examples](2.playbooks)
 3. [Vars examples](3.vars)
+4. [Includes examples](4.includes)
+5. [Loops examples](5.loops)
 
