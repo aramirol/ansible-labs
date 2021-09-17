@@ -11,14 +11,14 @@ Please, create all VMs and configure a static IP.
 ## Create Users
 
 After that, create a remote user that we will use to connect via *ssh*:
-```
+```sh
 $ sudo useradd -m -s /bin/bash ansible_user
 ```
 
 ## SSH Key
 
 From ansible-server VM, create a ssh key and copy to all nodes:
-```
+```sh
 $ ssh-keygen
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/ansible_user/.ssh/id_rsa):
@@ -41,7 +41,7 @@ The key's randomart image is:
 |        . .+.==o |
 +----[SHA256]-----+
 ```
-```
+```sh
 $ copy-ssh-id ansible_user@ansible-server
 $ copy-ssh-id ansible_user@ansible-client
 ```
@@ -49,7 +49,7 @@ $ copy-ssh-id ansible_user@ansible-client
 ## Edit Sudoers
 
 You need the remote user to have superuser permissions without a password. To do this edit `/etc/sudoers` and copy this lines:
-```
+```sh
 # Same things without a password
 ansible_user    ALL=(ALL)       NOPASSWD: ALL
 ```

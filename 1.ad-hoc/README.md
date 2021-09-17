@@ -4,7 +4,7 @@
 
 Simple command to test ansible modules.
 
-```
+```sh
 ansible group-all -i ../inventory -m ping
 ```
 
@@ -12,6 +12,6 @@ ansible group-all -i ../inventory -m ping
 
 Using become to grant root permissions via command line.
 
-```
+```sh
 ansible group-2 -i ../inventory -m apt -a "name=* state=latest" -b
 ```
