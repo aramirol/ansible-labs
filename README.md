@@ -7,8 +7,6 @@
 
 Ansible is an IT automation tool. It can configure systems, deploy software, and orchestrate more advanced IT tasks such as continuous deployments or zero downtime rolling updates.
 
-Ansible’s main goals are simplicity and ease-of-use. It also has a strong focus on security and reliability, featuring a minimum of moving parts, usage of OpenSSH for transport (with other transports and pull modes as alternatives), and a language that is designed around auditability by humans–even those not familiar with the program.
-
 ## Installation
 
 Ansible can be installed on many systems with pip, the Python package manager.
@@ -20,16 +18,15 @@ If pip is not already available on your system, run the following commands to in
 $ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 $ python get-pip.py --user
 ```
-You may need to perform some additional configuration before you are able to run Ansible. See the Python documentation on installing to the user site for more information.
 
 ### Installing Ansible with `pip`
 
-Once pip is installed, you can install Ansible 1:
+Once pip is installed, you can install Ansible:
 ```sh
 $ python -m pip install --user ansible
 ```
 
-In order to use the paramiko connection plugin or modules that require paramiko, install the required module 2:
+In order to use the paramiko connection plugin or modules that require paramiko, install the required module:
 ```sh
 $ python -m pip install --user paramiko
 ```
