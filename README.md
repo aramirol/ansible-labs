@@ -37,20 +37,6 @@ $ sudo python get-pip.py
 $ sudo python -m pip install ansible
 ```
 
-## Content
-
-0. [Create environment](0.environment)
-1. [Ad-hoc commands](1.ad-hoc)
-2. [Playbooks examples](2.playbooks)
-3. [Vars examples](3.vars)
-4. [Includes examples](4.includes)
-5. [Loops examples](5.loops)
-6. [Conditionals examples](6.conditionals)
-7. [Handlers example](7.handlers)
-8. [Tags examples](8.tags)
-9. [Roles examples](9.roles)
-10. [Galaxy examples](10.galaxy)
-
 ## License
 
 MIT License
